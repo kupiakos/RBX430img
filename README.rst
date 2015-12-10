@@ -45,17 +45,17 @@ width of 120 and keeping the same aspect ratio::
 
 -----
 
-To convert an 200x200 image called ``life.bmp`` into a bitonal black-and-white 80x40 word array, 
+To convert an 200x200 image called ``life.bmp`` into a bitonal black-and-white 60x30 word array, 
 using nearest-neighbor filtering::
 
-  $ python rbx430img.py -s nearest -m bwround life.bmp 80 40
+  $ python rbx430img.py -s nearest -m bwround life.bmp 60 30
 
 -----
 
-To convert an 80x80 image called ``twilightsparkle.png`` into a multi-line word array and capture that data 
+To convert an 60x60 image called ``twilightsparkle.png`` into a multi-line word array and capture that data 
 in a file ``image.txt``::
 
-  $ python rbx430img.py -f pretty twilightsparkle.png 80 80 > image.txt
+  $ python rbx430img.py -f pretty twilightsparkle.png 60 60 > image.txt
 
 Arguments
 ------------------------
@@ -165,6 +165,4 @@ Notes and Tips
 - Since loading large images can take noticable time, it may be best to run your program with 
   ``RBX430_init(_16MHZ)`` to get the CPU running as quickly as possible.
 
-This program was written by Kevin Haroldsen, who is currently a freshman in Computer Science at BYU. 
-It's open source under the MIT License, so feel free to modify it and provide fixes or really just do whatever you want. 
-Just don't sue me, and keep the license.
+This program was written by Kevin Haroldsen.
